@@ -22,8 +22,8 @@ class TextThemes {
 
   );
 
-  ///dark text theme--------------------------------------
 
+  ///dark text theme--------------------------------------
   static TextTheme darkTextTheme = TextTheme(
     displayMedium: TextStyle(
         fontFamily: 'UbuntuBold',
@@ -32,7 +32,7 @@ class TextThemes {
     ),
     bodySmall: TextStyle(
       fontFamily: 'UbuntuMedium',
-      color: white54,
+      color: purple900,
     ),
     displaySmall: TextStyle(
       fontSize: 25,

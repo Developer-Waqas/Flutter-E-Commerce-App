@@ -1,11 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants/colors/colors.dart';
-import '../../constants/image_strings/image_strings.dart';
-
 class OnBoardingContainer extends StatelessWidget {
-  final double imageHeight;
+  
   ImageProvider<Object> image;
   String text;
   String subText;
@@ -13,7 +10,6 @@ class OnBoardingContainer extends StatelessWidget {
 
    OnBoardingContainer({
     super.key,
-    required this.imageHeight,
     required this.image,
     required this.text,
      required this.subText,
@@ -22,6 +18,7 @@ class OnBoardingContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 15),
       color: color,
@@ -32,7 +29,7 @@ class OnBoardingContainer extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
             child: Image(
               image: image,
-              height: imageHeight,
+              height: size.height * 0.5,
             ),
           ),
           Column(
