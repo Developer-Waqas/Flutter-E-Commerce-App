@@ -1,16 +1,34 @@
+import 'dart:async';
+
 import 'package:e_commerce_app/src/features/authentication/controller/splash_controller/splash_controller.dart';
+import 'package:e_commerce_app/src/features/authentication/screens/onboarding_screen/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   SplashScreen({super.key});
 
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
 
-  final splashController = Get.put(SplashController());
+class _SplashScreenState extends State<SplashScreen> {
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    Timer(Duration(seconds: 3), () {
+      setState(() {
+        Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => OnBoardingScreen()), (route) => false);
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    splashController.splashScreen();
     return Scaffold(
       body: Center(
         child: Column(

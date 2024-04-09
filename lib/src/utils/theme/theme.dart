@@ -6,14 +6,19 @@ class AppTheme {
 
   ///light theme--------------------------------------
   static ThemeData lightTheme = ThemeData(
-    scaffoldBackgroundColor: purple900,
     brightness: Brightness.light,
     textTheme: TextThemes.lightTextTheme,
+    buttonTheme: ButtonThemeData(
+      buttonColor: purple900
+    ),
   );
 
   ///dark theme--------------------------------------
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
     textTheme: TextThemes.darkTextTheme,
+    buttonTheme: ButtonThemeData(
+        buttonColor: whiteColor,
+    ),
   );
 }

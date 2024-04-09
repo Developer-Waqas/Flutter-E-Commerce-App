@@ -37,11 +37,18 @@ class OnBoardingContainer extends StatelessWidget {
               SizedBox(height: 10,),
               Text(
                 text,
-                style: Theme.of(context).textTheme.displaySmall,
+                style: TextStyle(
+                    fontFamily: 'UbuntuBold',
+                    color: Colors.black87,
+                    fontSize: 30
+                ),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 10,),
-              Text(subText,style: Theme.of(context).textTheme.bodySmall,
+              Text(subText,style: TextStyle(
+                  fontFamily: 'UbuntuBold',
+                  color: Colors.black54,
+              ),
                 textAlign: TextAlign.center,
               ),
             ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 Color whiteColor = Colors.white;
-Color greyColor = Colors.blueGrey;
+Color greyColor = Colors.grey;
 Color white54 = Colors.white54;
 Color purple900 = Colors.purple.shade900;
 Color onBoardingColor2 = Color(0xFFFDDCDF);

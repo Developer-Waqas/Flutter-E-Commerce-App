@@ -7,7 +7,7 @@ class TextThemes {
   static TextTheme lightTextTheme = TextTheme(
     displayMedium: TextStyle(
         fontFamily: 'UbuntuBold',
-        color: whiteColor,
+        color: purple900,
         fontSize: 30
     ),
     displaySmall: TextStyle(
@@ -17,7 +17,17 @@ class TextThemes {
     ),
     bodySmall: TextStyle(
       fontFamily: 'UbuntuRegular',
-      color: greyColor,
+      color: Colors.grey,
+      fontSize: 14
+    ),
+    bodyMedium: TextStyle(
+      fontFamily: 'UbuntuMedium',
+      color: whiteColor
+    ),
+    headlineMedium: TextStyle(
+        fontFamily: 'UbuntuMedium',
+        color: blackColor,
+      fontSize: 15
     ),
 
   );
@@ -27,17 +37,22 @@ class TextThemes {
   static TextTheme darkTextTheme = TextTheme(
     displayMedium: TextStyle(
         fontFamily: 'UbuntuBold',
-        color: purple900,
+        color: Colors.white70,
         fontSize: 30
     ),
     bodySmall: TextStyle(
       fontFamily: 'UbuntuMedium',
-      color: purple900,
+      color: white54,
     ),
     displaySmall: TextStyle(
       fontSize: 25,
       fontFamily: 'UbuntuMedium',
-      color: purple900,
+      color: white54,
+    ),
+    headlineMedium: TextStyle(
+        fontFamily: 'UbuntuMedium',
+        color: white54,
+      fontSize: 10
     ),
 
   );
